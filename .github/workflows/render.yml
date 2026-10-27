@@ -1,0 +1,23 @@
+name: Refresh readable catalog
+on:
+  push:
+    branches: [main]
+    paths: [catalog.json, scripts/render.py]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/render.py
+      - name: Commit changes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh readable catalog'
+            git push
+          fi
