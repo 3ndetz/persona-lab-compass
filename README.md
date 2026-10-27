@@ -9,12 +9,19 @@
 ## Синтез речи
 
 - [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) — Семейство для потокового синтеза речи, клонирования и дизайна голоса.
+- [Fish Speech](https://github.com/fishaudio/fish-speech) — Семейство моделей синтеза речи и клонирования голоса.
 
 ## Изображения
 
 - [MOSS-Image](https://openmoss.ai/MOSS-Image/) — Открытая модель изображений на 5B параметров; управление композицией через JSON и координаты объектов.
 - [Krea 3](https://www.krea.ai/blog/introducing-krea-3) — Генерация и редактирование изображений; по данным Krea, до 6 референсов и 2K на собственной платформе.
 - [FLUX 3](https://www.krea.ai/models/flux-3) — Семейство для генерации и редактирования изображений и видео; доступность зависит от провайдера.
+- [Qwen-Image](https://github.com/QwenLM/Qwen-Image) — Семейство моделей генерации и редактирования изображений.
+
+## Видео
+
+- [Wan 2.2](https://github.com/Wan-Video/Wan2.2) — Семейство открытых моделей генерации видео.
+- [LTX-2](https://github.com/Lightricks/LTX-2) — Модели генерации видео и аудио.
 
 ## Агентные harness
 
@@ -25,6 +32,7 @@
 - [OpenHands](https://github.com/OpenHands/OpenHands) — Платформа агентной разработки и выполнения задач.
 - [Goose](https://github.com/block/goose) — Расширяемый агент для работы с инструментами.
 - [Cline](https://github.com/cline/cline) — Агент программирования для редактора и терминала.
+- [UI-TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) — Агент для работы с графическим интерфейсом.
 
 ## Память и RAG
 
@@ -51,6 +59,10 @@
 - [Ollama](https://github.com/ollama/ollama) — Локальный запуск и управление языковыми моделями.
 - [llama.cpp](https://github.com/ggml-org/llama.cpp) — Локальный запуск языковых моделей, включая GGUF и квантизованные варианты.
 - [vLLM](https://github.com/vllm-project/vllm) — Сервер и движок инференса языковых моделей.
+
+## vision
+
+- [FaceFusion](https://github.com/facefusion/facefusion) — Инструменты обработки и замены лица.
 
 ## Данные
 

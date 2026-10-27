@@ -1,30 +1,449 @@
 [
- {"id":"curated:moss-image","name":"MOSS-Image","provider":"OpenMOSS","category":"image","type":"model","source":"OpenMOSS","url":"https://openmoss.ai/MOSS-Image/","created":"2026-10-16","license":"Apache-2.0","description":"Открытая модель изображений на 5B параметров; управление композицией через JSON и координаты объектов.","tags":["text-to-image","layout"],"facts":[["Параметры","5B"],["Управление","Текст и JSON-разметка с координатами"],["Промпт","До 4 000 токенов"]]},
- {"id":"curated:krea-3","name":"Krea 3","provider":"Krea","category":"image","type":"api","source":"Krea","url":"https://www.krea.ai/blog/introducing-krea-3","created":"2026-10-15","description":"Генерация и редактирование изображений; по данным Krea, до 6 референсов и 2K на собственной платформе.","tags":["text-to-image","image-edit","references"],"facts":[["Референсы","До 6 изображений на Krea"],["Разрешение","До 2K"],["Время","Менее 8 секунд на Krea, заявлено производителем"],["Цена","$0.03 за 1K; $0.06 за 2K без референсов на Krea"]]},
- {"id":"curated:flux-3","name":"FLUX 3","provider":"Black Forest Labs","category":"image","type":"model","source":"Black Forest Labs / Krea","url":"https://www.krea.ai/models/flux-3","description":"Семейство для генерации и редактирования изображений и видео; доступность зависит от провайдера.","tags":["image","video"]},
- {"id":"curated:codex","name":"Codex","provider":"OpenAI","category":"harness","type":"harness","source":"GitHub","url":"https://github.com/openai/codex","description":"Агент для работы с кодом и инструментами в терминале."},
- {"id":"curated:claude-code","name":"Claude Code","provider":"Anthropic","category":"harness","type":"harness","source":"GitHub","url":"https://github.com/anthropics/claude-code","description":"Агент для работы с кодовой базой и инструментами."},
- {"id":"curated:opencode","name":"OpenCode","provider":"OpenCode","category":"harness","type":"harness","source":"GitHub","url":"https://github.com/anomalyco/opencode","description":"Открытый агент для разработки с поддержкой разных провайдеров."},
- {"id":"curated:aider","name":"Aider","provider":"Aider","category":"harness","type":"harness","source":"GitHub","url":"https://github.com/Aider-AI/aider","description":"Парное программирование в терминале с использованием моделей."},
- {"id":"curated:openhands","name":"OpenHands","provider":"OpenHands","category":"harness","type":"harness","source":"GitHub","url":"https://github.com/OpenHands/OpenHands","description":"Платформа агентной разработки и выполнения задач."},
- {"id":"curated:goose","name":"Goose","provider":"Block","category":"harness","type":"harness","source":"GitHub","url":"https://github.com/block/goose","description":"Расширяемый агент для работы с инструментами."},
- {"id":"curated:cline","name":"Cline","provider":"Cline","category":"harness","type":"harness","source":"GitHub","url":"https://github.com/cline/cline","description":"Агент программирования для редактора и терминала."},
- {"id":"curated:qwen3-tts","name":"Qwen3-TTS","provider":"Qwen","category":"tts","type":"model","source":"GitHub","url":"https://github.com/QwenLM/Qwen3-TTS","created":"2026-01-22","license":"Apache-2.0","description":"Семейство для потокового синтеза речи, клонирования и дизайна голоса.","tags":["streaming","voice cloning"],"facts":[["Варианты","0.6B и 1.7B"],["Режимы","Потоковый синтез, дизайн и клонирование голоса"]]},
- {"id":"curated:pipecat","name":"Pipecat","provider":"Daily / Pipecat","category":"orchestration","type":"framework","source":"GitHub","url":"https://github.com/pipecat-ai/pipecat","license":"BSD-2-Clause","description":"Пайплайны голосовых и мультимодальных агентов в реальном времени."},
- {"id":"curated:livekit","name":"LiveKit Agents","provider":"LiveKit","category":"orchestration","type":"framework","source":"GitHub","url":"https://github.com/livekit/agents","description":"Фреймворк для голосовых и мультимодальных агентов."},
- {"id":"curated:ollama","name":"Ollama","provider":"Ollama","category":"inference","type":"runtime","source":"GitHub","url":"https://github.com/ollama/ollama","description":"Локальный запуск и управление языковыми моделями."},
- {"id":"curated:llama-cpp","name":"llama.cpp","provider":"ggml","category":"inference","type":"runtime","source":"GitHub","url":"https://github.com/ggml-org/llama.cpp","description":"Локальный запуск языковых моделей, включая GGUF и квантизованные варианты."},
- {"id":"curated:vllm","name":"vLLM","provider":"vLLM","category":"inference","type":"runtime","source":"GitHub","url":"https://github.com/vllm-project/vllm","description":"Сервер и движок инференса языковых моделей."},
- {"id":"curated:langgraph","name":"LangGraph","provider":"LangChain","category":"orchestration","type":"framework","source":"GitHub","url":"https://github.com/langchain-ai/langgraph","description":"Построение управляемых графов и состояний агентных приложений."},
- {"id":"curated:autogen","name":"AutoGen","provider":"Microsoft","category":"orchestration","type":"framework","source":"GitHub","url":"https://github.com/microsoft/autogen","description":"Средства построения приложений с несколькими агентами."},
- {"id":"curated:crewai","name":"CrewAI","provider":"CrewAI","category":"orchestration","type":"framework","source":"GitHub","url":"https://github.com/crewAIInc/crewAI","description":"Оркестрация команд агентов и их задач."},
- {"id":"curated:mcp","name":"Model Context Protocol","provider":"MCP","category":"orchestration","type":"protocol","source":"Официальная документация","url":"https://modelcontextprotocol.io/","description":"Протокол подключения инструментов и источников данных к приложениям ИИ."},
- {"id":"curated:lightrag","name":"LightRAG","provider":"HKUDS","category":"memory","type":"framework","source":"GitHub","url":"https://github.com/HKUDS/LightRAG","description":"Поиск и генерация с использованием графа знаний."},
- {"id":"curated:mempalace","name":"MemPalace","provider":"MemPalace","category":"memory","type":"framework","source":"GitHub","url":"https://github.com/MemPalace/mempalace","description":"Локальная память агента: сохранение текста, семантический поиск и граф связей."},
- {"id":"curated:mem0","name":"Mem0","provider":"Mem0","category":"memory","type":"framework","source":"GitHub","url":"https://github.com/mem0ai/mem0","description":"Слой памяти для персонализированных ИИ-приложений."},
- {"id":"curated:graphiti","name":"Graphiti","provider":"Zep","category":"memory","type":"framework","source":"GitHub","url":"https://github.com/getzep/graphiti","description":"Временной граф знаний для агентных приложений."},
- {"id":"curated:llamaindex","name":"LlamaIndex","provider":"LlamaIndex","category":"memory","type":"framework","source":"GitHub","url":"https://github.com/run-llama/llama_index","description":"Инструменты для построения приложений на собственных данных и RAG."},
- {"id":"curated:haystack","name":"Haystack","provider":"deepset","category":"memory","type":"framework","source":"GitHub","url":"https://github.com/deepset-ai/haystack","description":"Пайплайны поиска и генерации на собственных данных."},
- {"id":"curated:agent-workplace","name":"Agent Workplace","provider":"Persona Lab","category":"memory","type":"project","source":"GitHub","url":"https://github.com/3ndetz/agent-workplace","description":"Рабочее пространство агента с файловой памятью и связанными заметками."},
- {"id":"curated:mineswarm","name":"Mineswarm","provider":"Persona Lab","category":"orchestration","type":"project","source":"Persona Lab","url":"https://mineswarm.personalabs.ru/","description":"Система персонажей и агентов Persona Lab."}
+ {
+  "id": "curated:moss-image",
+  "name": "MOSS-Image",
+  "provider": "OpenMOSS",
+  "category": "image",
+  "type": "model",
+  "source": "OpenMOSS",
+  "url": "https://openmoss.ai/MOSS-Image/",
+  "created": "2026-10-16",
+  "license": "Apache-2.0",
+  "description": "Открытая модель изображений на 5B параметров; управление композицией через JSON и координаты объектов.",
+  "tags": [
+   "text-to-image",
+   "layout"
+  ],
+  "facts": [
+   [
+    "Параметры",
+    "5B"
+   ],
+   [
+    "Управление",
+    "Текст и JSON-разметка с координатами"
+   ],
+   [
+    "Промпт",
+    "До 4 000 токенов"
+   ]
+  ]
+ },
+ {
+  "id": "curated:krea-3",
+  "name": "Krea 3",
+  "provider": "Krea",
+  "category": "image",
+  "type": "api",
+  "source": "Krea",
+  "url": "https://www.krea.ai/blog/introducing-krea-3",
+  "created": "2026-10-15",
+  "description": "Генерация и редактирование изображений; по данным Krea, до 6 референсов и 2K на собственной платформе.",
+  "tags": [
+   "text-to-image",
+   "image-edit",
+   "references"
+  ],
+  "facts": [
+   [
+    "Референсы",
+    "До 6 изображений на Krea"
+   ],
+   [
+    "Разрешение",
+    "До 2K"
+   ],
+   [
+    "Время",
+    "Менее 8 секунд на Krea, заявлено производителем"
+   ],
+   [
+    "Цена",
+    "$0.03 за 1K; $0.06 за 2K без референсов на Krea"
+   ]
+  ]
+ },
+ {
+  "id": "curated:flux-3",
+  "name": "FLUX 3",
+  "provider": "Black Forest Labs",
+  "category": "image",
+  "type": "model",
+  "source": "Black Forest Labs / Krea",
+  "url": "https://www.krea.ai/models/flux-3",
+  "description": "Семейство для генерации и редактирования изображений и видео; доступность зависит от провайдера.",
+  "tags": [
+   "image",
+   "video"
+  ]
+ },
+ {
+  "id": "curated:codex",
+  "name": "Codex",
+  "provider": "OpenAI",
+  "category": "harness",
+  "type": "harness",
+  "source": "GitHub",
+  "url": "https://github.com/openai/codex",
+  "description": "Агент для работы с кодом и инструментами в терминале."
+ },
+ {
+  "id": "curated:claude-code",
+  "name": "Claude Code",
+  "provider": "Anthropic",
+  "category": "harness",
+  "type": "harness",
+  "source": "GitHub",
+  "url": "https://github.com/anthropics/claude-code",
+  "description": "Агент для работы с кодовой базой и инструментами."
+ },
+ {
+  "id": "curated:opencode",
+  "name": "OpenCode",
+  "provider": "OpenCode",
+  "category": "harness",
+  "type": "harness",
+  "source": "GitHub",
+  "url": "https://github.com/anomalyco/opencode",
+  "description": "Открытый агент для разработки с поддержкой разных провайдеров."
+ },
+ {
+  "id": "curated:aider",
+  "name": "Aider",
+  "provider": "Aider",
+  "category": "harness",
+  "type": "harness",
+  "source": "GitHub",
+  "url": "https://github.com/Aider-AI/aider",
+  "description": "Парное программирование в терминале с использованием моделей."
+ },
+ {
+  "id": "curated:openhands",
+  "name": "OpenHands",
+  "provider": "OpenHands",
+  "category": "harness",
+  "type": "harness",
+  "source": "GitHub",
+  "url": "https://github.com/OpenHands/OpenHands",
+  "description": "Платформа агентной разработки и выполнения задач."
+ },
+ {
+  "id": "curated:goose",
+  "name": "Goose",
+  "provider": "Block",
+  "category": "harness",
+  "type": "harness",
+  "source": "GitHub",
+  "url": "https://github.com/block/goose",
+  "description": "Расширяемый агент для работы с инструментами."
+ },
+ {
+  "id": "curated:cline",
+  "name": "Cline",
+  "provider": "Cline",
+  "category": "harness",
+  "type": "harness",
+  "source": "GitHub",
+  "url": "https://github.com/cline/cline",
+  "description": "Агент программирования для редактора и терминала."
+ },
+ {
+  "id": "curated:qwen3-tts",
+  "name": "Qwen3-TTS",
+  "provider": "Qwen",
+  "category": "tts",
+  "type": "model",
+  "source": "GitHub",
+  "url": "https://github.com/QwenLM/Qwen3-TTS",
+  "created": "2026-01-22",
+  "license": "Apache-2.0",
+  "description": "Семейство для потокового синтеза речи, клонирования и дизайна голоса.",
+  "tags": [
+   "streaming",
+   "voice cloning"
+  ],
+  "facts": [
+   [
+    "Варианты",
+    "0.6B и 1.7B"
+   ],
+   [
+    "Режимы",
+    "Потоковый синтез, дизайн и клонирование голоса"
+   ]
+  ]
+ },
+ {
+  "id": "curated:pipecat",
+  "name": "Pipecat",
+  "provider": "Daily / Pipecat",
+  "category": "orchestration",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/pipecat-ai/pipecat",
+  "license": "BSD-2-Clause",
+  "description": "Пайплайны голосовых и мультимодальных агентов в реальном времени."
+ },
+ {
+  "id": "curated:livekit",
+  "name": "LiveKit Agents",
+  "provider": "LiveKit",
+  "category": "orchestration",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/livekit/agents",
+  "description": "Фреймворк для голосовых и мультимодальных агентов."
+ },
+ {
+  "id": "curated:ollama",
+  "name": "Ollama",
+  "provider": "Ollama",
+  "category": "inference",
+  "type": "runtime",
+  "source": "GitHub",
+  "url": "https://github.com/ollama/ollama",
+  "description": "Локальный запуск и управление языковыми моделями."
+ },
+ {
+  "id": "curated:llama-cpp",
+  "name": "llama.cpp",
+  "provider": "ggml",
+  "category": "inference",
+  "type": "runtime",
+  "source": "GitHub",
+  "url": "https://github.com/ggml-org/llama.cpp",
+  "description": "Локальный запуск языковых моделей, включая GGUF и квантизованные варианты."
+ },
+ {
+  "id": "curated:vllm",
+  "name": "vLLM",
+  "provider": "vLLM",
+  "category": "inference",
+  "type": "runtime",
+  "source": "GitHub",
+  "url": "https://github.com/vllm-project/vllm",
+  "description": "Сервер и движок инференса языковых моделей."
+ },
+ {
+  "id": "curated:langgraph",
+  "name": "LangGraph",
+  "provider": "LangChain",
+  "category": "orchestration",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/langchain-ai/langgraph",
+  "description": "Построение управляемых графов и состояний агентных приложений."
+ },
+ {
+  "id": "curated:autogen",
+  "name": "AutoGen",
+  "provider": "Microsoft",
+  "category": "orchestration",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/microsoft/autogen",
+  "description": "Средства построения приложений с несколькими агентами."
+ },
+ {
+  "id": "curated:crewai",
+  "name": "CrewAI",
+  "provider": "CrewAI",
+  "category": "orchestration",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/crewAIInc/crewAI",
+  "description": "Оркестрация команд агентов и их задач."
+ },
+ {
+  "id": "curated:mcp",
+  "name": "Model Context Protocol",
+  "provider": "MCP",
+  "category": "orchestration",
+  "type": "protocol",
+  "source": "Официальная документация",
+  "url": "https://modelcontextprotocol.io/",
+  "description": "Протокол подключения инструментов и источников данных к приложениям ИИ."
+ },
+ {
+  "id": "curated:lightrag",
+  "name": "LightRAG",
+  "provider": "HKUDS",
+  "category": "memory",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/HKUDS/LightRAG",
+  "description": "Поиск и генерация с использованием графа знаний."
+ },
+ {
+  "id": "curated:mempalace",
+  "name": "MemPalace",
+  "provider": "MemPalace",
+  "category": "memory",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/MemPalace/mempalace",
+  "description": "Локальная память агента: сохранение текста, семантический поиск и граф связей."
+ },
+ {
+  "id": "curated:mem0",
+  "name": "Mem0",
+  "provider": "Mem0",
+  "category": "memory",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/mem0ai/mem0",
+  "description": "Слой памяти для персонализированных ИИ-приложений."
+ },
+ {
+  "id": "curated:graphiti",
+  "name": "Graphiti",
+  "provider": "Zep",
+  "category": "memory",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/getzep/graphiti",
+  "description": "Временной граф знаний для агентных приложений."
+ },
+ {
+  "id": "curated:llamaindex",
+  "name": "LlamaIndex",
+  "provider": "LlamaIndex",
+  "category": "memory",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/run-llama/llama_index",
+  "description": "Инструменты для построения приложений на собственных данных и RAG."
+ },
+ {
+  "id": "curated:haystack",
+  "name": "Haystack",
+  "provider": "deepset",
+  "category": "memory",
+  "type": "framework",
+  "source": "GitHub",
+  "url": "https://github.com/deepset-ai/haystack",
+  "description": "Пайплайны поиска и генерации на собственных данных."
+ },
+ {
+  "id": "curated:agent-workplace",
+  "name": "Agent Workplace",
+  "provider": "Persona Lab",
+  "category": "memory",
+  "type": "project",
+  "source": "GitHub",
+  "url": "https://github.com/3ndetz/agent-workplace",
+  "description": "Рабочее пространство агента с файловой памятью и связанными заметками."
+ },
+ {
+  "id": "curated:mineswarm",
+  "name": "Mineswarm",
+  "provider": "Persona Lab",
+  "category": "orchestration",
+  "type": "project",
+  "source": "Persona Lab",
+  "url": "https://mineswarm.personalabs.ru/",
+  "description": "Система персонажей и агентов Persona Lab."
+ },
+ {
+  "id": "curated:wan22",
+  "name": "Wan 2.2",
+  "provider": "Wan",
+  "category": "video",
+  "type": "model",
+  "source": "GitHub",
+  "url": "https://github.com/Wan-Video/Wan2.2",
+  "description": "Семейство открытых моделей генерации видео.",
+  "experience_url": "https://github.com/3ndetz/MyLittleAwesome",
+  "facts": [
+   [
+    "Заметки Persona Lab",
+    "Исторические наблюдения за 2025–2026 годы; сверяйте с текущей версией."
+   ]
+  ]
+ },
+ {
+  "id": "curated:ltx2",
+  "name": "LTX-2",
+  "provider": "Lightricks",
+  "category": "video",
+  "type": "model",
+  "source": "GitHub",
+  "url": "https://github.com/Lightricks/LTX-2",
+  "description": "Модели генерации видео и аудио.",
+  "experience_url": "https://github.com/3ndetz/MyLittleAwesome",
+  "facts": [
+   [
+    "Заметки Persona Lab",
+    "Исторические наблюдения за 2025–2026 годы; сверяйте с текущей версией."
+   ]
+  ]
+ },
+ {
+  "id": "curated:fish-speech",
+  "name": "Fish Speech",
+  "provider": "Fish Audio",
+  "category": "tts",
+  "type": "model",
+  "source": "GitHub",
+  "url": "https://github.com/fishaudio/fish-speech",
+  "description": "Семейство моделей синтеза речи и клонирования голоса.",
+  "experience_url": "https://github.com/3ndetz/MyLittleAwesome",
+  "facts": [
+   [
+    "Заметки Persona Lab",
+    "Исторические наблюдения за 2025–2026 годы; сверяйте с текущей версией."
+   ]
+  ]
+ },
+ {
+  "id": "curated:qwen-image",
+  "name": "Qwen-Image",
+  "provider": "Qwen",
+  "category": "image",
+  "type": "model",
+  "source": "GitHub",
+  "url": "https://github.com/QwenLM/Qwen-Image",
+  "description": "Семейство моделей генерации и редактирования изображений.",
+  "experience_url": "https://github.com/3ndetz/MyLittleAwesome",
+  "facts": [
+   [
+    "Заметки Persona Lab",
+    "Исторические наблюдения за 2025–2026 годы; сверяйте с текущей версией."
+   ]
+  ]
+ },
+ {
+  "id": "curated:facefusion",
+  "name": "FaceFusion",
+  "provider": "FaceFusion",
+  "category": "vision",
+  "type": "tool",
+  "source": "GitHub",
+  "url": "https://github.com/facefusion/facefusion",
+  "description": "Инструменты обработки и замены лица.",
+  "experience_url": "https://github.com/3ndetz/MyLittleAwesome",
+  "facts": [
+   [
+    "Заметки Persona Lab",
+    "Исторические наблюдения за 2025–2026 годы; сверяйте с текущей версией."
+   ]
+  ]
+ },
+ {
+  "id": "curated:ui-tars",
+  "name": "UI-TARS Desktop",
+  "provider": "ByteDance",
+  "category": "harness",
+  "type": "harness",
+  "source": "GitHub",
+  "url": "https://github.com/bytedance/UI-TARS-desktop",
+  "description": "Агент для работы с графическим интерфейсом.",
+  "experience_url": "https://github.com/3ndetz/MyLittleAwesome",
+  "facts": [
+   [
+    "Заметки Persona Lab",
+    "Исторические наблюдения за 2025–2026 годы; сверяйте с текущей версией."
+   ]
+  ]
+ }
 ]
